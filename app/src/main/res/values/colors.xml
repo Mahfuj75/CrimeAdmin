@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splashColor">#1E1E1E</color>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#283593</color>
+    <color name="colorRed">#b71c1c</color>
+    <color name="colorWhite">#f5f5f5</color>
+    <color name="colorIndigo">#3949ab</color>
+    <color name="colorGreen">#1B5E20</color>
+    <color name="colorBlueGray">#37474f</color>
+    <color name="colorBlueWhite">#424242</color>
+    <color name="colorFound">#ffffff</color>
+    <color name="colorLost">#ffcbcb</color>
+</resources>

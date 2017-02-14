@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Crime Admin</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_log_out">Sign out</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string-array name="complain_subject_short">
+        <item>সকল</item>
+        <item>দ্রব্য</item>
+        <item>পণ্য</item>
+        <item>পরিবেশ</item>
+        <item>অপরাধ</item>
+        <item>চাহিদা</item>
+    </string-array>
+
+
+    <string-array name="complain_subject">
+        <item>সকল</item>
+        <item>মাদক</item>
+        <item>পরিবেশ</item>
+        <item>মৎস</item>
+        <item>ইভটিজিং</item>
+        <item>বাল্যবিবাহ</item>
+        <item>দ্রব্যমূল্য</item>
+        <item>ভূমি ও জলাশয়</item>
+        <item>পরিবহন ও যোগাযোগ</item>
+        <item>ঔষধ ও চিকিৎসা</item>
+        <item>শিক্ষা সংক্রান্ত</item>
+        <item>নিম্নমানের খাদ্য ও প্রসাধনী</item>
+        <item>বীজ ও সার</item>
+        <item>নির্বাচন</item>
+        <item>স্বাস্থ্য সংক্রান্ত</item>
+        <item>লাইসেন্স সংক্রান্ত</item>
+        <item>ভেজাল</item>
+        <item>দূষিত খাদ্য</item>
+        <item>অগ্নি প্রতিরোধ</item>
+        <item>বিদ্যুৎ সংক্রান্ত</item>
+        <item>পাটজাত দ্রব্য</item>
+        <item>মেয়াদ উত্তীর্ণ পণ্য</item>
+        <item>ওজনে কম</item>
+        <item>প্যাকেটজাত দ্রব্য</item>
+        <item>এসিড সংক্রান্ত</item>
+        <item>ধূমপান</item>
+        <item>দূষিত রক্ত</item>
+        <item>ভোজ্যতেল</item>
+        <item>জুয়া</item>
+        <item>আয়োডিন বিষয়ক</item>
+        <item>ইটভাটা</item>
+    </string-array>
+
+
+    <string-array name="subject_drobbo">
+        <item>সকল</item>
+        <item>দ্রব্যমূল্য</item>
+        <item>নিম্নমানের খাদ্য ও প্রসাধনী</item>
+        <item>দূষিত খাদ্য</item>
+        <item>ভোজ্যতেল</item>
+        <item>আয়োডিন বিষয়ক</item>
+        <item>ভেজাল</item>
+    </string-array>
+
+
+    <string-array name="subject_ponno">
+        <item>সকল</item>
+        <item>পাটজাত দ্রব্য</item>
+        <item>মেয়াদ উত্তীর্ণ পণ্য</item>
+        <item>প্যাকেটজাত দ্রব্য</item>
+        <item>ওজনে কম</item>
+    </string-array>
+
+    <string-array name="subject_porebesh">
+        <item>সকল</item>
+        <item>ভূমি ও জলাশয়</item>
+        <item>বীজ ও সার</item>
+        <item>মৎস</item>
+        <item>পরিবহন ও যোগাযোগ</item>
+        <item>ইটভাটা</item>
+        <item>বিদ্যুৎ সংক্রান্ত</item>
+    </string-array>
+
+    <string-array name="subject_oporadh">
+        <item>সকল</item>
+        <item>মাদক</item>
+        <item>ইভটিজিং</item>
+        <item>বাল্যবিবাহ</item>
+        <item>ধূমপান</item>
+        <item>জুয়া</item>
+        <item>এসিড সংক্রান্ত</item>
+        <item>নির্বাচন</item>
+    </string-array>
+
+    <string-array name="subject_chahida">
+        <item>সকল</item>
+        <item>শিক্ষা সংক্রান্ত</item>
+        <item>ঔষধ ও চিকিৎসা</item>
+        <item>স্বাস্থ্য সংক্রান্ত</item>
+        <item>এসিড সংক্রান্ত</item>
+        <item>লাইসেন্স সংক্রান্ত</item>
+        <item>দূষিত রক্ত</item>
+    </string-array>
+</resources>

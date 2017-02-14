@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/complain_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/MyCardViewStyle"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPaddingLeft="16dp"
+    card_view:contentPaddingRight="16dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="5dp">
+
+    <LinearLayout
+
+        android:id="@+id/row_view_LinearLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:text="Date"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/textView_complain_date"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:text="Time"
+                android:textAlignment="textEnd"
+                android:id="@+id/textView_complain_time"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="25dp">
+            <TextView
+                android:layout_weight=".6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:text="Subject:" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:paddingBottom="10dp"
+                android:text="Complain Subject"
+                android:textAlignment="center"
+                android:id="@+id/textView_complain_subject"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight=".6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:text="Complain Date:"
+                android:id="@+id/textView_lastSeenDateName"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:paddingBottom="10dp"
+                android:text="1-11-2016"
+                android:textAlignment="center"
+                android:id="@+id/textView_incident_date"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:text="Location:" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#212121"
+                android:textAlignment="center"
+                android:text="Complain Location"
+                android:id="@+id/textView_incident_location" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

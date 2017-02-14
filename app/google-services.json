@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "149350531456",
+    "firebase_url": "https://missing-person-finder.firebaseio.com",
+    "project_id": "missing-person-finder",
+    "storage_bucket": "missing-person-finder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149350531456:android:b725c400f9ad1724",
+        "android_client_info": {
+          "package_name": "com.onenation.oneworld.mahfuj75.searchperson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149350531456-6nrlou6pcku78dkvskmvlnoa2f8a8ltg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onenation.oneworld.mahfuj75.searchperson",
+            "certificate_hash": "6A6644A39F766219D23F979C1DFD679EC4B60DC0"
+          }
+        },
+        {
+          "client_id": "149350531456-uk4gdebtng0a6bpc5fptbau4gihp9j5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeAXLWoqCZ931_7Wn8nYXUnHm5xUVVvHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149350531456-uk4gdebtng0a6bpc5fptbau4gihp9j5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149350531456:android:e43c87e5d49a018f",
+        "android_client_info": {
+          "package_name": "com.onenation.oneworld.mahfuj75.crimeadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149350531456-c34ojpa0dhqc1sv6ci71irpn15jnro8a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onenation.oneworld.mahfuj75.crimeadmin",
+            "certificate_hash": "6A6644A39F766219D23F979C1DFD679EC4B60DC0"
+          }
+        },
+        {
+          "client_id": "149350531456-uk4gdebtng0a6bpc5fptbau4gihp9j5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeAXLWoqCZ931_7Wn8nYXUnHm5xUVVvHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149350531456-uk4gdebtng0a6bpc5fptbau4gihp9j5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

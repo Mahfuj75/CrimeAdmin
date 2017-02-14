@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorIndigo</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ButtonStyle2" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorGreen</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ButtonStyle3" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorRed</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="ButtonStyle4" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#006064</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="MyRadioButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorIndigo</item>
+    </style>
+
+    <style name="SwitchStyle1" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorControlNormal">@color/colorBlueGray</item>
+        <item name="colorControlActivated">@color/colorGreen</item>
+    </style>
+
+    <style name="ButtonBorderLess" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#0d47a1</item>
+    </style>
+
+    <style name="MyCardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPaddingBottom">24dp</item>
+        <item name="contentPaddingTop">24dp</item>
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item>
+        <item name="cardBackgroundColor">#efebe9</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+</resources>
