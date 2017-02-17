@@ -26,6 +26,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:fontFamily="serif"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
                 android:layout_gravity="start"/>
 
             <TextView
+                android:fontFamily="serif"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -53,7 +55,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#000000"/>
+            android:background="#BDBDBD"/>
 
 
 
@@ -63,17 +65,21 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingTop="25dp">
+
             <TextView
-                android:layout_weight=".6"
+                android:fontFamily="serif"
+                android:layout_weight=".7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textSize="17sp"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:paddingBottom="10dp"
-                android:text="Subject:" />
+                android:text="Subject:"
+                android:id="@+id/textView4" />
 
             <TextView
+                android:fontFamily="serif"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -90,7 +96,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
-                android:layout_weight=".6"
+                android:fontFamily="serif"
+                android:layout_weight=".7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textSize="17sp"
@@ -100,6 +107,7 @@
                 android:text="Complain Date:"
                 android:id="@+id/textView_lastSeenDateName"/>
             <TextView
+                android:fontFamily="serif"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -121,7 +129,8 @@
 
 
             <TextView
-                android:layout_weight="0.6"
+                android:fontFamily="serif"
+                android:layout_weight="0.7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textSize="17sp"
@@ -132,6 +141,7 @@
 
 
             <TextView
+                android:fontFamily="serif"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"

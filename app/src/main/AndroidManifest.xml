@@ -28,12 +28,13 @@
             android:name=".activity.AdminActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.LoginActivity"
             android:label="@string/title_activity_login"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".activity.ComplainViewActivity"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ComplainViewActivity" />
+        <activity android:name=".activity.AddComplainActivity"></activity>
     </application>
 
 </manifest>

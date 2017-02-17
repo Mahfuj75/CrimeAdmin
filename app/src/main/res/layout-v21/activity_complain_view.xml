@@ -5,8 +5,8 @@
     android:id="@+id/activity_complain_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
     tools:context="com.onenation.oneworld.mahfuj75.crimeadmin.activity.ComplainViewActivity"
     android:orientation="vertical">
 
@@ -20,41 +20,55 @@
 
 
             <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/textViewComplainPostDate"
+                    android:textColor="#000000"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:textSize="15sp"
+
+                    android:fontFamily="monospace"
+                    android:textSize="17sp"
                     android:text="Date"/>
                 <TextView
+                    android:id="@+id/textViewComplainPostTime"
+                    android:textColor="#000000"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
                     android:gravity="right"
-                    android:textSize="15sp"
+                    android:textSize="17sp"
                     android:text="Time"/>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#000000"/>
+                android:background="#BDBDBD"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 
             <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:elevation="5dp"
-                app:cardCornerRadius="2dp">
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPaddingLeft="16dp"
+                card_view:contentPaddingRight="16dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -69,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textSize="17sp"
-                        android:fontFamily="sans-serif"
+                        android:fontFamily="serif"
                         android:textColor="#000000"
                         android:textStyle="bold"
                         android:text="Complain Giver Information"/>
@@ -81,23 +95,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingBottom="7dp">
+                        android:paddingBottom="10dp">
 
                         <TextView
+                            android:lines="1"
                             android:layout_width="0dp"
-                            android:layout_weight=".6"
+                            android:layout_weight=".7"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:textStyle="bold"
-                            android:text="Gander :"/>
+                            android:text="Gender :"/>
                         <TextView
+                            android:id="@+id/complain_view_textViewGender"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:gravity="center"
                             android:text="Male"/>
@@ -108,23 +124,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingBottom="7dp">
+                        android:paddingBottom="10dp">
 
                         <TextView
+                            android:lines="1"
                             android:layout_width="0dp"
-                            android:layout_weight=".6"
+                            android:layout_weight=".7"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:textStyle="bold"
                             android:text="Name :"/>
                         <TextView
+                            android:id="@+id/complain_view_textViewName"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:gravity="center"
                             android:text="Mahfujur Rahman Khan"/>
@@ -134,24 +152,26 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingBottom="7dp">
+                        android:paddingBottom="10dp">
 
                         <TextView
+                            android:lines="1"
                             android:layout_width="0dp"
-                            android:layout_weight=".6"
+                            android:layout_weight=".7"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:textStyle="bold"
                             android:text="Nid Number :" />
 
                         <TextView
+                            android:id="@+id/complain_view_textViewNid"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:gravity="center"
                             android:text="109001581525"/>
@@ -162,27 +182,29 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingBottom="7dp">
+                        android:paddingBottom="10dp">
 
                         <TextView
+                            android:lines="1"
                             android:layout_width="0dp"
-                            android:layout_weight=".6"
+                            android:layout_weight=".7"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:textStyle="bold"
                             android:text="Phone Number :" />
 
                         <TextView
+                            android:id="@+id/complain_view_textViewPhoneNumber"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:gravity="center"
-                            android:text="01733886616"/>
+                            android:text="01733886616" />
 
                     </LinearLayout>
 
@@ -200,11 +222,15 @@
                 android:layout_height="20dp" />
 
             <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:elevation="4dp"
-                app:cardCornerRadius="2dp">
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPaddingLeft="16dp"
+                card_view:contentPaddingRight="16dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -219,10 +245,10 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textSize="17sp"
-                        android:fontFamily="sans-serif"
+                        android:fontFamily="serif"
                         android:textColor="#000000"
                         android:textStyle="bold"
-                        android:text="Complain Description"/>
+                        android:text="Complain"/>
 
                     <View
                         android:layout_width="match_parent"
@@ -231,25 +257,26 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingBottom="7dp">
+                        android:paddingBottom="10dp">
 
                         <TextView
+                            android:lines="1"
                             android:layout_width="0dp"
-                            android:layout_weight=".6"
+                            android:layout_weight=".7"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:textStyle="bold"
-                            android:text="Complain Subject :"
-                            android:id="@+id/textView2" />
+                            android:text="Complain Subject :"/>
 
                         <TextView
+                            android:id="@+id/complain_view_textViewComplainSubject"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:gravity="center"
                             android:text="ভূমি ও জলাশয়"/>
@@ -260,23 +287,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingBottom="7dp">
+                        android:paddingBottom="10dp">
 
                         <TextView
+                            android:lines="1"
                             android:layout_width="0dp"
-                            android:layout_weight=".6"
+                            android:layout_weight=".7"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:textStyle="bold"
                             android:text="Incident Date :"/>
                         <TextView
+                            android:id="@+id/complain_view_textViewIncidentDate"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
-                            android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:textSize="17sp"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:gravity="center"
                             android:text="4 - 2 - 2017"/>
@@ -286,24 +315,26 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingBottom="7dp">
+                        android:paddingBottom="10dp">
 
                         <TextView
+                            android:lines="1"
                             android:layout_width="0dp"
-                            android:layout_weight=".6"
+                            android:layout_weight=".7"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:textStyle="bold"
                             android:text="Incident Time :" />
 
                         <TextView
+                            android:id="@+id/complain_view_textViewIncidentTime"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:gravity="center"
                             android:text="2 : 26  PM"/>
@@ -313,57 +344,54 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingBottom="7dp">
+                        android:paddingBottom="10dp">
 
                         <TextView
-                            android:layout_width="0dp"
-                            android:layout_weight="0.46"
+                            android:lines="1"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
-                            android:fontFamily="sans-serif"
+                            android:fontFamily="serif"
                             android:textColor="#000000"
                             android:textStyle="bold"
                             android:text="Proof Of evidence :" />
 
                         <Button
-                            android:layout_marginRight="80dp"
-                            android:layout_width="69dp"
+                            android:fontFamily="serif"
+                            android:layout_width="100dp"
                             android:gravity="center"
                             android:layout_height="wrap_content"
                             android:textAllCaps="false"
                             android:text="Get file"
-                            android:theme="@style/ButtonStyle"/>
+                            android:theme="@style/ButtonStyle"
+                            android:id="@+id/button2" />
 
                     </LinearLayout>
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
+                        android:layout_weight=".4"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingBottom="7dp">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_weight=".6"
-                            android:layout_height="wrap_content"
-                            android:textSize="16sp"
-                            android:fontFamily="sans-serif"
-                            android:textColor="#000000"
-                            android:textStyle="bold"
-                            android:text="Description :" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:textSize="16sp"
-                            android:fontFamily="sans-serif"
-                            android:textColor="#000000"
-                            android:text=""
-                            android:minLines="3"
-                            android:maxLines="7"/>
-
-                    </LinearLayout>
+                        android:textSize="16sp"
+                        android:fontFamily="serif"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Description :"
+                        android:paddingBottom="20dp"/>
+                    <TextView
+                        android:paddingTop="2dp"
+                        android:paddingBottom="7dp"
+                        android:id="@+id/complain_view_textViewIncidentDescription"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:fontFamily="serif-monospace"
+                        android:textColor="#000000"
+                        android:text=""
+                        android:minLines="1"
+                        android:maxLines="12"/>
 
 
 
@@ -373,6 +401,235 @@
 
 
             </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPaddingLeft="16dp"
+                card_view:contentPaddingRight="16dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingBottom="10dp">
+                    <TextView
+                        android:paddingTop="7dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:fontFamily="serif"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Spot"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:lines="1"
+                            android:layout_width="0dp"
+                            android:layout_weight=".7"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Category :"
+                            android:id="@+id/textView3" />
+
+                        <TextView
+                            android:id="@+id/complain_view_textViewSpotType"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:text="Sub-Location"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:lines="1"
+                            android:layout_width="0dp"
+                            android:layout_weight=".7"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Division :"
+                            android:id="@+id/textView2" />
+
+                        <TextView
+                            android:id="@+id/complain_view_textViewSpotDivision"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:text="ঢাকা"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:lines="1"
+                            android:layout_width="0dp"
+                            android:layout_weight=".7"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="District :" />
+
+                        <TextView
+                            android:id="@+id/complain_view_textViewSpotDistrict"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:text="টাঙ্গাইল"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:lines="1"
+                            android:layout_width="0dp"
+                            android:layout_weight=".7"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Sub-District :" />
+
+                        <TextView
+                            android:id="@+id/complain_view_textViewSpotSubDistrict"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:fontFamily="serif"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:text="দেলদুয়ার"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:lines="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:paddingBottom="20dp"
+                        android:fontFamily="serif"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Description :" />
+
+                    <TextView
+                        android:paddingBottom="7dp"
+                        android:id="@+id/complain_view_textViewSpotDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:fontFamily="serif-monospace"
+                        android:textColor="#000000"
+                        android:text=""
+                        android:minLines="1"
+                        android:maxLines="12"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <RadioGroup
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/complain_view_RadioButtonValidation"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Validation" />
+                <RadioButton
+                    android:id="@+id/complain_view_RadioButtonProcess"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Process" />
+                <RadioButton
+                    android:id="@+id/complain_view_RadioButtonAction"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Action" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
 
 
         </LinearLayout>
