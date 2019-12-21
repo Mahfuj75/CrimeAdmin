@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.onenation.oneworld.mahfuj75.crimeadmin.valProActFragments.ProcessFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/complainRecyclerViewProcess"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textView_fragmentProcess"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGreen"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:text="No Process" />
+
+</FrameLayout>
